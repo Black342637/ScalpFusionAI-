@@ -1,0 +1,5 @@
+data/         # pobieranie danych MEXC
+indicators/   # wskaźniki techniczne
+sentiment/    # sentyment (mocki, AI)
+trading/      # silnik decyzji
+dashboard/    # frontend w Streamlit
