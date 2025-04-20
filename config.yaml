@@ -1,0 +1,19 @@
+api_keys:
+  mexc_api_key: "YOUR_MEXC_API_KEY"
+  mexc_api_secret: "YOUR_MEXC_API_SECRET"
+  telegram_token: "YOUR_TELEGRAM_BOT_TOKEN"
+  telegram_chat_id: "YOUR_CHAT_ID"
+
+strategy:
+  symbol: "BTC/USDT"
+  timeframe: "1m"
+  rsi_period: 14
+  macd_fast: 12
+  macd_slow: 26
+  macd_signal: 9
+  ma_fast: 9
+  ma_slow: 21
+  sl: 0.005
+  tp: 0.01
+  position_size: 0.001
+  dry_run: true
