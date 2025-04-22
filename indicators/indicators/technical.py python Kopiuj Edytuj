@@ -1,0 +1,9 @@
+import pandas_ta as ta
+
+def calculate_indicators(df):
+    df["RSI_14"] = ta.rsi(df["close"], length=14)
+    macd = ta.macd(df["close"])
+    df["MACD_12_26_9"] = macd["MACD_12_26_9"]
+    df["MA_fast"] = ta.sma(df["close"], length=9)
+    df["MA_slow"] = ta.sma(df["close"], length=21)
+    return df
