@@ -7,3 +7,15 @@ requests
 scikit-learn
 xgboost
 python-telegram-bot
+pandas
+tqdm
+ccxt
+pandas_ta
+streamlit
+requests
+scikit-learn
+xgboost
+python-telegram-bot
+transformers
+torch
+openai
