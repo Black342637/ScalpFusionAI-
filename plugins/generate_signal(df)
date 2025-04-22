@@ -1,0 +1,18 @@
+# plugins/breakout_strategy.py
+
+def generate_signal(df):
+    """
+    Prosta strategia breakout: kupno, jeśli obecna świeca zamyka się powyżej maksimum z ostatnich 20 świec.
+    """
+    if len(df) < 20:
+        return "Za mało danych"
+
+    recent_high = df["close"].iloc[-20:-1].max()
+    current_close = df["close"].iloc[-1]
+
+    if current_close > recent_high:
+        return "BUY – Breakout 🔼"
+    elif current_close < df["close"].iloc[-20:-1].min():
+        return "SELL – Breakdown 🔽"
+    else:
+        return "HOLD – Konsolidacja"
